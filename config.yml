@@ -1,0 +1,57 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+locale: "fr"
+
+collections:
+  - name: "site"
+    label: "Contenu du site"
+    files:
+      - name: "content"
+        label: "Accueil, camps & staff"
+        file: "content/site.json"
+        fields:
+          - label: "Bloc d'accueil (hero)"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Petit texte au-dessus du titre", name: "eyebrow", widget: "string" }
+              - { label: "Titre — ligne 1", name: "title_line1", widget: "string" }
+              - { label: "Titre — ligne 2 (en or)", name: "title_line2", widget: "string" }
+              - { label: "Texte sous le titre", name: "lede", widget: "text" }
+
+          - label: "Chiffres clés (bandeau)"
+            name: "stats"
+            widget: "list"
+            fields:
+              - { label: "Valeur (ex: 88)", name: "value", widget: "string" }
+              - { label: "Légende (ex: Places disponibles)", name: "label", widget: "string" }
+
+          - label: "Les camps"
+            name: "camps"
+            widget: "list"
+            fields:
+              - { label: "Identifiant (ne pas modifier)", name: "id", widget: "string" }
+              - { label: "Nom du camp", name: "name", widget: "string" }
+              - { label: "Places disponibles", name: "slots", widget: "string" }
+              - { label: "Dates et lieu", name: "dates", widget: "string" }
+              - { label: "Catégories", name: "category", widget: "string" }
+              - { label: "Résumé (1 phrase, page d'accueil)", name: "summary", widget: "text" }
+              - { label: "Description complète (page Les camps)", name: "description", widget: "text" }
+
+          - label: "Le staff (par semaine)"
+            name: "staff_groups"
+            widget: "list"
+            fields:
+              - { label: "Nom de la semaine", name: "name", widget: "string" }
+              - label: "Membres"
+                name: "members"
+                widget: "list"
+                fields:
+                  - { label: "Prénom", name: "name", widget: "string" }
+                  - { label: "Rôle", name: "role", widget: "string" }
+                  - { label: "Lien Instagram", name: "instagram", widget: "string", required: false }

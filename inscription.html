@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inscriptions 2026 — 4D Elite Camp</title>
+<meta name="description" content="Inscris-toi au camp 4D Elite 2026 : choisis ton camp, renseigne tes informations et celles de ton contact parent/tuteur.">
+<link rel="icon" href="assets/logo-navy-sm.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <img src="assets/logo-navy-sm.jpg" alt="4D Elite Camp">
+      <span class="brand-word">4D <span>ELITE</span></span>
+    </a>
+    <div class="header-actions">
+      <nav class="main-nav" id="main-nav">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="camps.html">Les camps</a></li>
+          <li><a href="staff.html">Le staff</a></li>
+          <li><a href="hebergement.html">Salles &amp; hébergement</a></li>
+          <li><a href="inscription.html" class="is-active">Inscriptions</a></li>
+        </ul>
+      </nav>
+      <a href="inscription.html" class="nav-cta">S'inscrire</a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Édition 2026 — places limitées</span>
+    <h1>Inscriptions</h1>
+    <p>Remplis le formulaire ci-dessous pour inscrire un joueur ou une joueuse à l'un des 3 camps. Compte environ 5 minutes.</p>
+  </div>
+</section>
+
+<section class="section section-hardwood">
+  <div class="container">
+
+    <!--
+      IMPORTANT — connecter ce formulaire à un vrai destinataire :
+      1) Créer un compte gratuit sur https://formspree.io (ou Netlify Forms si le site est hébergé sur Netlify).
+      2) Remplacer "YOUR_FORM_ID" ci-dessous par l'ID fourni par le service.
+      3) Sans cette étape, le formulaire affiche seulement une confirmation locale
+         mais n'envoie aucune donnée nulle part (voir js/script.js).
+    -->
+    <form id="inscription-form" class="form-wrap" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+
+      <span class="eyebrow">Étape 1</span>
+      <h2 style="font-size:1.6rem;margin-top:10px;">Informations du joueur / de la joueuse</h2>
+
+      <div class="form-row">
+        <div class="field">
+          <label for="nom">Nom</label>
+          <input type="text" id="nom" name="nom" required>
+        </div>
+        <div class="field">
+          <label for="prenom">Prénom</label>
+          <input type="text" id="prenom" name="prenom" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="field">
+          <label for="naissance">Date de naissance</label>
+          <input type="date" id="naissance" name="date_naissance" required>
+        </div>
+        <div class="field">
+          <label for="categorie">Catégorie</label>
+          <select id="categorie" name="categorie" required>
+            <option value="" disabled selected>Choisir…</option>
+            <option value="U13">U13</option>
+            <option value="U15">U15</option>
+            <option value="U18">U18</option>
+            <option value="U23">U23</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="field">
+          <label for="club">Club actuel</label>
+          <input type="text" id="club" name="club">
+        </div>
+        <div class="field">
+          <label for="championnat">Championnat / niveau</label>
+          <input type="text" id="championnat" name="championnat" placeholder="Ex. Championnat de France, régional, PPF…">
+        </div>
+      </div>
+
+      <fieldset>
+        <legend>Camp choisi</legend>
+        <div class="radio-grid">
+          <label class="opt"><input type="radio" name="camp" value="4D Élite (30 juin – 5 juillet, Gravelines)" required> 4D Élite<br>30 juin – 5 juillet, Gravelines</label>
+          <label class="opt"><input type="radio" name="camp" value="Access to Élite (6 – 11 juillet, Gravelines)"> Access to Élite<br>6 – 11 juillet, Gravelines</label>
+          <label class="opt"><input type="radio" name="camp" value="Back to the Origins (6 – 10 juillet, Liévin)"> Back to the Origins<br>6 – 10 juillet, Liévin</label>
+        </div>
+      </fieldset>
+
+      <span class="eyebrow" style="margin-top:36px;display:inline-flex;">Étape 2</span>
+      <h2 style="font-size:1.6rem;margin-top:10px;">Contact parent / tuteur</h2>
+
+      <div class="form-row">
+        <div class="field">
+          <label for="parent-nom">Nom du parent / tuteur</label>
+          <input type="text" id="parent-nom" name="parent_nom" required>
+        </div>
+        <div class="field">
+          <label for="parent-tel">Téléphone</label>
+          <input type="tel" id="parent-tel" name="parent_telephone" required>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="parent-email">E-mail</label>
+        <input type="email" id="parent-email" name="parent_email" required>
+      </div>
+
+      <span class="eyebrow" style="margin-top:36px;display:inline-flex;">Étape 3</span>
+      <h2 style="font-size:1.6rem;margin-top:10px;">Informations médicales</h2>
+
+      <div class="field">
+        <label for="allergies">Allergies</label>
+        <textarea id="allergies" name="allergies" rows="2" placeholder="Aucune, ou préciser"></textarea>
+      </div>
+      <div class="field">
+        <label for="medical">Traitement en cours / informations médicales utiles</label>
+        <textarea id="medical" name="informations_medicales" rows="3" placeholder="Aucun, ou préciser (traitement, PAI, contre-indications sportives...)"></textarea>
+      </div>
+      <div class="field">
+        <label for="urgence">Contact d'urgence (si différent du parent/tuteur ci-dessus)</label>
+        <input type="text" id="urgence" name="contact_urgence" placeholder="Nom et téléphone">
+      </div>
+
+      <div class="field">
+        <label class="opt" style="border:none;padding:0;">
+          <input type="checkbox" required>
+          J'autorise le staff 4D Elite à prendre les mesures nécessaires en cas d'urgence médicale.
+        </label>
+      </div>
+
+      <div class="form-submit">
+        <button type="submit" class="btn btn-gold btn-block">Envoyer l'inscription</button>
+        <p class="form-note">En envoyant ce formulaire, tu seras recontacté(e) par e-mail pour la confirmation de place et les modalités de paiement.</p>
+      </div>
+    </form>
+
+    <div class="confirm-msg" id="confirm-msg">
+      <span class="eyebrow">Inscription reçue</span>
+      <h3>Merci, l'inscription est enregistrée !</h3>
+      <p>L'équipe 4D Elite revient vers vous par e-mail sous peu pour confirmer la place et les modalités de paiement.</p>
+      <a href="index.html" class="btn btn-outline-light" style="margin-top:20px;">Retour à l'accueil</a>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="assets/logo-navy-sm.jpg" alt="4D Elite Camp">
+        <span class="footer-brand-word">4D ELITE</span>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h5>Navigation</h5>
+          <a href="camps.html">Les camps</a>
+          <a href="staff.html">Le staff</a>
+          <a href="hebergement.html">Salles &amp; hébergement</a>
+          <a href="inscription.html">Inscriptions</a>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <p><a href="mailto:4delitebasket@gmail.com">4delitebasket@gmail.com</a></p>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/4d.elite/?hl=fr" aria-label="Instagram" target="_blank" rel="noopener">IG</a>
+            <a href="https://www.facebook.com/profile.php?id=100076563185500" aria-label="Facebook" target="_blank" rel="noopener">FB</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 4D Elite Camp — Gravelines &amp; Liévin</span>
+      <span>Basketball performance camp</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", (user) => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+</body>
+</html>

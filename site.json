@@ -1,0 +1,80 @@
+{
+  "hero": {
+    "eyebrow": "Édition 2026 — Gravelines & Liévin",
+    "title_line1": "La culture de",
+    "title_line2": "la performance.",
+    "lede": "Trois semaines de stage réservées aux joueuses et joueurs U13 à U23 qui veulent franchir un cap : travail individuel, charge optimisée, encadrement de haut niveau — dans la bonne humeur."
+  },
+  "stats": [
+    { "value": "3", "label": "Semaines de stage" },
+    { "value": "88", "label": "Places disponibles" },
+    { "value": "U13–U23", "label": "Catégories couvertes" },
+    { "value": "6e", "label": "Édition depuis 2021" }
+  ],
+  "camps": [
+    {
+      "id": "elite",
+      "name": "4D Élite",
+      "slots": "32",
+      "dates": "30 juin — 5 juillet · Gravelines",
+      "category": "U13 PPF · U15 & U18 championnat de France",
+      "summary": "Le plus haut niveau des stages 4D : performance individuelle, rigueur et culture d'excellence.",
+      "description": "La Semaine Élite représente le plus haut niveau des stages 4D Élite. Elle s'adresse aux joueurs et joueuses U15 et U18 évoluant en championnat de France, avec dérogation possible pour les jeunes U13 intégré(e)s au Parcours de Performance Fédéral (PPF).\n\nEncadré par une équipe de coachs de haut niveau et de préparateurs physiques spécialisés, ce stage met l'accent sur la performance individuelle, la rigueur et la culture d'excellence — dans un environnement d'entraînement exigeant et personnalisé."
+    },
+    {
+      "id": "access",
+      "name": "Access to Élite",
+      "slots": "40",
+      "dates": "6 — 11 juillet · Gravelines",
+      "category": "U13 · U15 · U18 championnat régional",
+      "summary": "Une immersion complète dans la culture de la performance, pour franchir un cap dans son développement.",
+      "description": "La semaine Access to Élite offre une immersion complète dans la culture de la performance. Ouverte aux garçons et filles U13, U15 et U18 évoluant en championnat régional, elle s'adresse aux jeunes joueurs désireux de franchir un cap dans leur développement.\n\nEncadré par une équipe de coachs expérimentés et de préparateurs physiques spécialisés, le stage propose un contenu inspiré de la philosophie de la Semaine Élite, alliant exigence, intensité et progression individuelle."
+    },
+    {
+      "id": "origins",
+      "name": "Back to the Origins",
+      "slots": "16",
+      "dates": "6 — 10 juillet · Liévin",
+      "category": "U23 Espoirs · PNM · NM3 · NM2",
+      "summary": "Nouvelle formule exclusive : retour à l'essence de la performance, format inédit et accompagnement sur-mesure.",
+      "description": "Le camp Back to the Origins marque un retour à l'essence même de la performance : travail, exigence, passion et authenticité. Réservé aux joueurs et joueuses U23 évoluant en Espoirs ou en championnat de France seniors (PNM, NM3, NM2).\n\nEncadré par des coachings experts et une approche personnalisée, cette semaine propose un format inédit où chaque détail compte — une immersion totale dans la culture 4D Élite, pour un cadre d'excellence et une exigence de chaque instant."
+    }
+  ],
+  "staff_groups": [
+    {
+      "name": "Semaine Élite",
+      "members": [
+        { "name": "Ludovic", "role": "Coach", "instagram": "https://www.instagram.com/ludo.baloncesto/" },
+        { "name": "Oumar", "role": "Community Manager", "instagram": "https://www.instagram.com/guiro.fr/?hl=fr" },
+        { "name": "Brice", "role": "Coach", "instagram": "https://instagram.com/brice_malungila" },
+        { "name": "Kris", "role": "Coach", "instagram": "https://www.instagram.com/aos_academy/" },
+        { "name": "Djino", "role": "Coach", "instagram": "https://www.instagram.com/lelab.ball/?hl=fr" },
+        { "name": "Flavien", "role": "Préparateur physique", "instagram": "https://www.instagram.com/pierre.lefebvre.training/?hl=fr" },
+        { "name": "Emilien", "role": "Préparateur physique", "instagram": "https://www.instagram.com/pierre.lefebvre.training/?hl=fr" },
+        { "name": "Frantson", "role": "Coach", "instagram": "https://instagram.com/manoncostenoble" },
+        { "name": "Jules", "role": "Coach", "instagram": "https://www.instagram.com/adr.noel/" },
+        { "name": "Nils", "role": "Photographe", "instagram": "https://instagram.com/brice_malungila" }
+      ]
+    },
+    {
+      "name": "Semaine Access to Élite",
+      "members": [
+        { "name": "Remy", "role": "Préparateur physique", "instagram": "https://www.instagram.com/adr.noel/" },
+        { "name": "Lucie", "role": "Préparatrice physique", "instagram": "https://www.instagram.com/adr.noel/" },
+        { "name": "Samir", "role": "Coach", "instagram": "https://instagram.com/manoncostenoble" },
+        { "name": "Maelys", "role": "Coach", "instagram": "https://instagram.com/manoncostenoble" },
+        { "name": "Nils", "role": "Photographe", "instagram": "https://instagram.com/brice_malungila" },
+        { "name": "Oumar", "role": "Community Manager", "instagram": "https://www.instagram.com/guiro.fr/?hl=fr" }
+      ]
+    },
+    {
+      "name": "Semaine Back to the Origins",
+      "members": [
+        { "name": "Pierre", "role": "Préparateur physique", "instagram": "https://www.instagram.com/pierre.lefebvre.training/?hl=fr" },
+        { "name": "Jules", "role": "Coach", "instagram": "https://www.instagram.com/adr.noel/" },
+        { "name": "Maysan", "role": "Coach", "instagram": "https://instagram.com/manoncostenoble" },
+        { "name": "Oumar", "role": "Community Manager", "instagram": "https://www.instagram.com/guiro.fr/?hl=fr" }
+      ]
+    }
+  ]
+}
